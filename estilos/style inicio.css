@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+body {
+    font-family: 'Anton', sans-serif;
+    background: linear-gradient(50000deg, #123a57, #dfe5ff);
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    background-image:linear-gradient(
+        rgba(22, 66, 107, 0.5),
+        rgba(9, 17, 20, 0.5)),
+        url(../imagenes/imagen\ principal.jpg);
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        box-sizing: border-box;
+        width: 100%;   
+}
+
+
+.titulo h1{  
+    color: #a9b2db;
+    font-size: 80px;
+    letter-spacing: 12px;
+    height:70vh; 
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+
+.logo {
+    width: 110px;
+    margin-top: 20px   ;
+    margin-left: 50px;
+    
+}
+.logo img{
+    width: 160px;
+}
+
+.barra{
+    width: 100%;
+    max-height: 70px;
+    background: #9788ac;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+
+}
+
+
+
+.subtitulo-1{
+    color: #4673c2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(9, 9, 14, 0.822);
+    font-size: 30px;
+    letter-spacing: 12px;
+    height:100px; 
+    margin-top:100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.d-item{
+    width: 100%;
+    height: 700px;
+    
+}
+ .d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    
+ }
+
+ .subtitulo-2{
+    color: #4673c2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(9, 9, 14, 0.822);
+    font-size: 30px;
+    letter-spacing: 12px;
+    height:100px; 
+    margin-top:200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+ }
+.galeria-2{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.galeria-2 .imag {
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 3px 0px rgba(22, 66, 107, 0.5);
+
+}
+ .imag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+ }
+ 
+ .overlay{
+position: absolute;
+bottom: 0;
+left: 0;
+background: #123a579f;
+width: 100%;
+height: 0;
+overflow: hidden;
+text-align: center;
+transition: 1s ease;
+
+ }
+
+ .imag-letra{
+    color: #c7ccfa;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+   
+    }
+  
+    .imag:hover .overlay{
+        height: 100%;
+        cursor: pointer;
+    }
+
+    @media  screen and (max-width: 1000px)  {
+        .contenedor-imagen{
+            width: 95%;
+        }
+        
+    }
+    @media  screen and (max-width: 700px){
+        .contenedor-imagen{
+            width: 90%;
+        }
+        .contenedor-imagen{
+            width: 48%;
+        }
+        
+    }
+    @media  screen and (max-width: 700px){
+        .h2{
+            width: 90%;
+        }
+        .contenedor-imagen{
+            width: 48%;}
+    }
+
+    .fotter-contenido {
+        margin-top: 100px;
+        width: 100%;
+        background-color: #9788ac;
+    }
+    .fotter-contenido .grupo-1{
+        width: 100%;
+        margin-top: 100px;
+        width: 100%;
+        max-width: 3000px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:200px;
+        padding: 45px 0px;
+        
+    
+    }
+    .fotter-contenido .grupo-1 .box figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fotter-contenido .grupo-1 .box figure img{
+        width: 350px;
+       
+    
+    }
+    .fotter-contenido .grupo-1 .box h3{
+        color: #dfe5ff;
+        margin-bottom: 100px;
+        font-size: 25px;
+    }
+    .fotter-contenido .grupo-1 .box p{
+        color: aliceblue;
+        margin-bottom: 10px;
+    }
+    .fotter-contenido .grupo-2{
+        background-color: #19202c;
+        padding: 15px 10px;
+        text-align: center;
+        color: aliceblue;
+    }
+    .fotter-contenido .grupo-2 small{
+        font-size: 15px;
+    }
+    @media screen and (max-width:800px){
+        .fotter-contenido .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+         }
+    }
